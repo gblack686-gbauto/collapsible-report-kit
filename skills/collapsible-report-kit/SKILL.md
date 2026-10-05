@@ -18,6 +18,8 @@ Use this skill to create polished report surfaces with the Collapsible Report Ki
 
 The default pattern is a **bundle**: optional plan/scope artifact first, implementation evidence second, final report third. This keeps the report readable while preserving proof for audit or handoff without forcing teams to use one specific planning framework.
 
+For TAC-style output, conform to the full HTML examples in `examples/tac-plan-html/`, not only the simplified starter pages. Those files preserve the actual inline CSS, color palette, typography, collapsible-section grammar, and long-form report density from recent TAC plan commits.
+
 ## When to Use
 
 - You need a public-safe report style without private company logos or internal SVG diagrams.
@@ -62,6 +64,18 @@ Default sections:
 5. **Validation evidence** — tests, smoke checks, screenshots, public readbacks, and source links.
 6. **Artifacts and deliverables** — HTML, PDF, bundle files, deploy URLs, and source paths.
 7. **Risks and next actions** — known gaps, owner decisions, and follow-up tasks.
+
+## TAC Plan Style Conformance
+
+When rendering a TAC-style plan or report:
+
+1. Read `examples/tac-plan-html/manifest.json` and at least one full HTML example before changing the style.
+2. Preserve the palette: cream `#F3F1E7`, panel `#E6E4D9`, stone `#D6D4C8`, ink `#191919`, terracotta `#D97757`, terracotta-hover `#B75F43`, blue `#3D6EA8`.
+3. Preserve Inter + Newsreader typography, compact hero pills, native `<details>` sections, section indexes, summary metadata, print styles, and reduced-motion handling.
+4. Treat `examples/basic-report.html` and `examples/bundle-report.html` as starter demos only; they are not the TAC visual authority.
+5. Keep planning methodology separate: use the examples for style, not as a mandate to use the TAC planning process.
+
+See `docs/tac-plan-style-conformance.md`.
 
 ## Planning Separation
 
@@ -112,4 +126,5 @@ Use `.crk-brand-mark` for text initials or replace the lockup with your own logo
 - [ ] Evidence is summarized and sanitized; raw secrets and private logs are excluded.
 - [ ] The bundle manifest or README points to every artifact.
 - [ ] Print/PDF output is readable.
+- [ ] TAC-style outputs were compared against `examples/tac-plan-html/` and the palette/section grammar still match.
 - [ ] `npm run check` passes in this repository.
