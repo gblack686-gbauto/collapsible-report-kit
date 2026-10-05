@@ -10,6 +10,9 @@ It packages the reusable look and feel of a high-signal internal report format w
 - `src/report-style.js` — optional progressive enhancement for section nav, open/close all, active nav state.
 - `examples/basic-report.html` — copy-paste starter report.
 - `examples/custom-brand.html` — shows how another company can override colors, brand text, and source label.
+- `examples/bundle-report.html` — shows bundle contents, approval status, reuse/provenance, and implemented-report anatomy.
+- `docs/report-sections.md` — default sections for implemented reports.
+- `docs/planning-separation.md` — how to keep planning libraries separate from the report surface.
 
 ## Quick start
 
@@ -91,7 +94,7 @@ Sometimes the deliverable is a bundle rather than a single report. Use `examples
 - sanitized screenshots/test receipts/source links, and
 - an optional `manifest.json` index.
 
-The lifecycle is: scope request → scope approval → implementation → implemented report. The report should make the approval state explicit and separate claims from evidence.
+The common lifecycle is: scope request → scope approval → implementation → implemented report. That lifecycle is optional integration guidance, not a required planning framework. The report should make approval state explicit, include reuse/provenance when relevant, and separate claims from evidence.
 
 ## Hermes skill
 
