@@ -81,6 +81,22 @@ Set CSS variables on `:root` or a wrapper class. No logo is required.
 </body>
 ```
 
+## Bundle pattern
+
+Sometimes the deliverable is a bundle rather than a single report. Use `examples/bundle-report.html` and `docs/bundle-pattern.md` when you need to package:
+
+- the approved plan or scope brief,
+- the implemented collapsible report,
+- optional PDF export,
+- sanitized screenshots/test receipts/source links, and
+- an optional `manifest.json` index.
+
+The lifecycle is: scope request → scope approval → implementation → implemented report. The report should make the approval state explicit and separate claims from evidence.
+
+## Hermes skill
+
+This repo also includes `skills/collapsible-report-kit/SKILL.md`, a portable skill-style runbook for agents that need to create reports or bundles with this kit.
+
 ## Notes
 
 - Works without JavaScript: native `<details>` still open and close.
