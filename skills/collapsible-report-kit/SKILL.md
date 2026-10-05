@@ -16,7 +16,7 @@ metadata:
 
 Use this skill to create polished report surfaces with the Collapsible Report Kit. The kit provides a logo-free CSS/JavaScript shell for report briefs, approval gates, implementation summaries, evidence sections, and bundled deliverables.
 
-The default pattern is a **bundle**: approved plan first, implementation second, final report third, and evidence alongside it. This keeps the report readable while preserving the proof needed for audit or handoff.
+The default pattern is a **bundle**: optional plan/scope artifact first, implementation evidence second, final report third. This keeps the report readable while preserving proof for audit or handoff without forcing teams to use one specific planning framework.
 
 ## When to Use
 
@@ -58,9 +58,14 @@ Default sections:
 1. **Overview** — what changed, why it matters, status, and top-level outcome.
 2. **Scope and approvals** — who approved what, when, assumptions, and non-goals.
 3. **Implementation summary** — concrete work performed, grouped by component or workflow.
-4. **Validation evidence** — tests, smoke checks, screenshots, public readbacks, and source links.
-5. **Artifacts and deliverables** — HTML, PDF, bundle files, deploy URLs, and source paths.
-6. **Risks and next actions** — known gaps, owner decisions, and follow-up tasks.
+4. **Reuse and provenance** — existing templates, components, patterns, prior reports, libraries, or assets reused; what was newly created; and where each came from.
+5. **Validation evidence** — tests, smoke checks, screenshots, public readbacks, and source links.
+6. **Artifacts and deliverables** — HTML, PDF, bundle files, deploy URLs, and source paths.
+7. **Risks and next actions** — known gaps, owner decisions, and follow-up tasks.
+
+## Planning Separation
+
+This kit is a report surface, not a planning scale or implementation methodology. It can display approval state and plan artifacts, but a full planning/approval library should live separately. See `docs/planning-separation.md`.
 
 ## HTML Starter
 
