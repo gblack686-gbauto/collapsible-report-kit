@@ -10,6 +10,10 @@ const required = [
   'docs/bundle-pattern.md',
   'docs/report-sections.md',
   'docs/planning-separation.md',
+  'docs/tac-plan-style-conformance.md',
+  'examples/tac-plan-html/manifest.json',
+  'examples/tac-plan-html/official-gbauto-tac-plan-template.html',
+  'examples/tac-plan-html/tac-exemplar-library.html',
   'skills/collapsible-report-kit/SKILL.md',
   'README.md',
   'LICENSE'
@@ -27,4 +31,16 @@ for (const htmlFile of ['examples/basic-report.html', 'examples/custom-brand.htm
     if (!html.includes(marker)) throw new Error(`${htmlFile} missing ${marker}`);
   }
 }
+
+const manifest = JSON.parse(fs.readFileSync('examples/tac-plan-html/manifest.json', 'utf8'));
+if (!manifest.examples || manifest.examples.length < 3) {
+  throw new Error('TAC plan manifest needs multiple examples');
+}
+for (const example of manifest.examples) {
+  const html = fs.readFileSync(example.html_file, 'utf8');
+  for (const token of ['#F3F1E7', '#D97757', '#191919', '<details']) {
+    if (!html.includes(token)) throw new Error(`${example.html_file} missing TAC style marker ${token}`);
+  }
+}
+
 console.log('package check passed');
