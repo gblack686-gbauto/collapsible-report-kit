@@ -1,0 +1,33 @@
+{
+  "name": "collapsible-report-kit",
+  "version": "0.1.0",
+  "description": "A lightweight, logo-free CSS and JavaScript kit for polished collapsible HTML reports.",
+  "type": "module",
+  "main": "src/report-style.js",
+  "style": "src/report-style.css",
+  "exports": {
+    ".": {
+      "import": "./src/report-style.js",
+      "default": "./src/report-style.js"
+    },
+    "./css": "./src/report-style.css"
+  },
+  "scripts": {
+    "check": "node scripts/check-package.mjs"
+  },
+  "keywords": [
+    "report",
+    "css",
+    "collapsible",
+    "details",
+    "html",
+    "template"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ]
+}
