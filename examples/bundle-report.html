@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Plan Bundle Report</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../src/report-style.css" />
+<script type="module" src="../src/report-style.js"></script>
+</head>
+<body class="crk-document">
+  <div class="crk-topbar"><div class="crk-topbar-inner"><div class="crk-brand-lockup"><span class="crk-brand-mark">PB</span><span class="crk-brand-text">Plan Bundle</span></div><div class="crk-source-name">Scope approval to implemented report</div></div></div>
+  <header class="crk-hero"><div><p class="crk-eyebrow">Bundle Report</p><h1>Approved plan bundle and implementation report</h1><p class="crk-subtitle">A bundle collects the approved scope, the plan, the implementation evidence, and the report surface into one reviewable package.</p><div class="crk-pills"><span class="crk-pill crk-pill-status"><span>Status</span><strong>Implemented</strong></span><span class="crk-pill crk-pill-warm"><span>Gate</span><strong>Scope approved first</strong></span><span class="crk-pill crk-pill-neutral"><span>Bundle</span><strong>HTML + PDF + Evidence</strong></span></div></div></header>
+  <main class="crk-layout"><aside class="crk-section-menu" data-crk-nav></aside><div class="crk-sections">
+    <details class="crk-section" open><summary><span class="crk-section-index">01</span><span class="crk-section-title">Bundle contents</span><span class="crk-section-count">bundle - 91 words</span></summary><div class="crk-section-body"><p><strong>Use a bundle when one report is not enough context.</strong> The bundle is the portable folder that lets another team understand what was approved, what changed, what evidence proves it, and what artifact they should read first.</p><div class="crk-bundle-grid"><div class="crk-bundle-card"><h4>Plan brief</h4><p>Human-readable scope, decisions, assumptions, and acceptance criteria.</p><code>plan.html</code></div><div class="crk-bundle-card"><h4>Implemented report</h4><p>The polished collapsible report generated after work is complete.</p><code>report.html</code></div><div class="crk-bundle-card"><h4>Evidence pack</h4><p>Receipts, test output summaries, screenshots, and source links.</p><code>evidence/</code></div></div></div></details>
+    <details class="crk-section"><summary><span class="crk-section-index">02</span><span class="crk-section-title">Approval flow</span><span class="crk-section-count">flow - 74 words</span></summary><div class="crk-section-body"><p>The important pattern is to approve scope before implementation. That keeps execution bounded and makes the final report easier to audit.</p><div class="crk-flow-steps"><div class="crk-flow-step"><h4>Scope request</h4><p>Define the desired outcome, audience, constraints, and non-goals.</p></div><div class="crk-flow-step"><h4>Scope approval</h4><p>Human approves exactly what can be built or reported.</p></div><div class="crk-flow-step"><h4>Implementation</h4><p>Work happens inside the approved boundary with receipts captured.</p></div><div class="crk-flow-step"><h4>Implemented report</h4><p>The final bundle separates claims, evidence, residual risk, and next actions.</p></div></div></div></details>
+    <details class="crk-section"><summary><span class="crk-section-index">03</span><span class="crk-section-title">Implemented report anatomy</span><span class="crk-section-count">sections - 101 words</span></summary><div class="crk-section-body"><p>An implemented report should be skimmable from the nav and still complete when every section is opened.</p><ul class="crk-section-list"><li><strong>Overview</strong>What changed, why it matters, and current status.</li><li><strong>Scope and approvals</strong>Who approved what, when, and which boundaries remained out of scope.</li><li><strong>Implementation summary</strong>The concrete work performed, grouped by component or workflow.</li><li><strong>Validation evidence</strong>Tests, readbacks, screenshots, and source links. Summarize logs; do not dump them.</li><li><strong>Artifacts</strong>HTML, PDF, bundle files, deploy URLs, and source paths.</li><li><strong>Risks and next actions</strong>Known gaps, owner decisions, and follow-up tasks.</li></ul></div></details>
+  </div></main>
+  <footer class="crk-footer">Bundle pattern example. Replace placeholder paths with real artifact URLs or local package paths.</footer>
+</body>
+</html>
