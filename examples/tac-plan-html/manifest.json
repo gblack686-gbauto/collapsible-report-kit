@@ -1,0 +1,49 @@
+{
+  "description": "Full HTML TAC plan examples copied from recent gbautomation commits for style conformance.",
+  "examples": [
+    {
+      "slug": "official-gbauto-tac-plan-template",
+      "commit": "c1316366",
+      "source_path": "resources/skills/tac-plan/references/official-gbauto-tac-plan-template.html",
+      "title": "Official GBAuto TAC plan template",
+      "why": "Smallest canonical source reference for the approved plan shell, colors, typography, and collapsible details grammar.",
+      "bytes": 57733,
+      "has_tokens": true,
+      "has_details": true,
+      "html_file": "examples/tac-plan-html/official-gbauto-tac-plan-template.html"
+    },
+    {
+      "slug": "tac-exemplar-library",
+      "commit": "c65872b2",
+      "source_path": "artifacts/plan-renders/2026-09-30-tac-exemplar-library/2026-09-30-tac-exemplar-library.html",
+      "title": "TAC Exemplar Library",
+      "why": "Recent full-size TAC plan render with complete inline HTML/CSS and long-section behavior.",
+      "bytes": 243840,
+      "has_tokens": true,
+      "has_details": true,
+      "html_file": "examples/tac-plan-html/tac-exemplar-library.html"
+    },
+    {
+      "slug": "job-outreach-pipeline",
+      "commit": "4d80d392",
+      "source_path": "artifacts/plan-renders/2026-09-30-job-outreach-pipeline/2026-09-30-job-outreach-pipeline.html",
+      "title": "Job Outreach Pipeline",
+      "why": "Recent production-style TAC plan with full plan depth, section density, pills, and report-scale typography.",
+      "bytes": 268993,
+      "has_tokens": true,
+      "has_details": true,
+      "html_file": "examples/tac-plan-html/job-outreach-pipeline.html"
+    },
+    {
+      "slug": "meet-transcript-pipeline-completion",
+      "commit": "e375a550",
+      "source_path": "artifacts/plan-renders/adopted-plans/2026-09-22-meet-transcript-pipeline-completion.html",
+      "title": "Meet Transcript Pipeline Completion",
+      "why": "Adopted-plan example showing approval-oriented copy and long implementation sections in the same visual shell.",
+      "bytes": 258238,
+      "has_tokens": true,
+      "has_details": true,
+      "html_file": "examples/tac-plan-html/meet-transcript-pipeline-completion.html"
+    }
+  ]
+}
