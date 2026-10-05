@@ -24,8 +24,11 @@ Use these sections as a default:
 1. Overview
 2. Scope and approvals
 3. Implementation summary
-4. Validation evidence
-5. Artifacts and deliverables
-6. Risks and next actions
+4. Reuse and provenance
+5. Validation evidence
+6. Artifacts and deliverables
+7. Risks and next actions
+
+This kit is not a planning framework. Use `docs/planning-separation.md` when you want to integrate an external planning library without forcing teams to use one specific plan format.
 
 Keep raw logs, private data, and credentials out of the report. Link to sanitized evidence instead.
