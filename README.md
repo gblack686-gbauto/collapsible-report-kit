@@ -2,7 +2,7 @@
 
 A lightweight, logo-free CSS and JavaScript kit for polished collapsible HTML reports: sticky top bar, report hero, taxonomy/status pills, side navigation, `<details>` sections, metric cards, print styles, and reduced-motion support.
 
-It packages the reusable look and feel of a high-signal internal report format without shipping company logos, SVG diagrams, private data, build tooling, or external service dependencies.
+It packages the reusable look and feel of a high-signal internal report format without shipping company logos, SVG diagrams, private data, build tooling, or external service dependencies. For TAC-style output, the full HTML examples in `examples/tac-plan-html/` are the visual authority.
 
 ## What is included
 
@@ -13,6 +13,8 @@ It packages the reusable look and feel of a high-signal internal report format w
 - `examples/bundle-report.html` — shows bundle contents, approval status, reuse/provenance, and implemented-report anatomy.
 - `docs/report-sections.md` — default sections for implemented reports.
 - `docs/planning-separation.md` — how to keep planning libraries separate from the report surface.
+- `examples/tac-plan-html/` — full HTML TAC plan examples from recent commits; these are the style conformance authority for TAC-like outputs.
+- `docs/tac-plan-style-conformance.md` — palette, typography, interaction, and conformance rules extracted from those examples.
 
 ## Quick start
 
