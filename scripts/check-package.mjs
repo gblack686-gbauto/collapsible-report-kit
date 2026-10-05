@@ -8,6 +8,8 @@ const required = [
   'examples/custom-brand.html',
   'examples/bundle-report.html',
   'docs/bundle-pattern.md',
+  'docs/report-sections.md',
+  'docs/planning-separation.md',
   'skills/collapsible-report-kit/SKILL.md',
   'README.md',
   'LICENSE'
