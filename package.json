@@ -27,6 +27,8 @@
   "files": [
     "src",
     "examples",
+    "docs",
+    "skills",
     "README.md",
     "LICENSE"
   ]
